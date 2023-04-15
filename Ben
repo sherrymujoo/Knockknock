@@ -1,0 +1,5 @@
+print (" Knock Knock" )
+question = input (" Type 'who's there' :  ")
+print ("Ben ")
+answer = input( " Type 'Ben Who?' ")
+print ( " Ben knocking on your door all day ! ")
