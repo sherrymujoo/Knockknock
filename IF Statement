@@ -1,0 +1,6 @@
+mytype = input("What's your year of birth  ?: ")
+if mytype >= "1995":
+ print("You're Gen-Z!")
+ print("You're just really cool")
+else:
+ print("You're probably a millenial")
