@@ -1,0 +1,16 @@
+def user_validation(username):
+    return username.islower()
+
+username = input("Enter Username : ")
+if user_validation(username):
+    print("username is available")
+    def pass_validation(password):
+      return len(password)>=12
+
+    password = input("please type a password : ")
+    if pass_validation(password):
+      print("Account created successfully")
+    else:
+      print (" Password should be atleast 12 characters")
+else:
+    print("The username is not in all lowercase.")
