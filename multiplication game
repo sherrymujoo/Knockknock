@@ -1,0 +1,14 @@
+m = int(input('Enter any number: '))
+x = 0 
+score = 0
+for c in range(m,m*10): 
+  x += 1
+  a = int(input('What is {} multiplied by {}? '.format(m, x))) 
+  if a == m * x:  
+    score += 1 
+    print('That is correct! Your score is {}'.format(score))
+    if score == 10: 
+      print('You got all answers right, Youre awesome!')
+      break 
+  else: 
+    print('That is incorrect, let us try again.')
