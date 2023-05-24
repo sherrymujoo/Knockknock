@@ -1,0 +1,35 @@
+import random
+import os , time 
+
+print( ' xx Character Builder xx ')
+print('\n')
+time.sleep(1)
+def character() : 
+    legend_name = input('Name your legend :')
+    character_type = input ( 'Character Type ( Human , Elf , Wizard, Orc :  )')
+    print(legend_name,'the' ,character_type)
+    
+
+character()
+  
+def stats() : 
+  health =   ( random.randint(1,6) * random.randint(1,12) /  2 + 10  )
+  strength = (random.randint(1,6) * random.randint(1,12) /  2 + 12 )
+  print('Health : ', health ,'\n', 'Strength :', strength)
+  
+stats()
+
+print('\n')
+while True : 
+  again = input('generate another character ? : ')
+  if again == "yes" : 
+    character()
+    stats()
+  else : 
+    break
+
+os.system('clear')
+print('May your name go down in legend !!')
+start_again = int(input ('Press 1 to start again !'))
+if start_again == 1 : 
+  character()
