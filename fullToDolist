@@ -1,0 +1,36 @@
+import os , time 
+
+theList=[]
+
+def printList() : 
+  print()
+  print(theList)
+  print()
+
+while True : 
+
+  menu = input('  1 : View list\n  2 : Add to List\n  3 : Remove from List\n  4 : Delete List \n  5 : Edit List \n \n Select from above options : ' ) 
+    
+  if menu == "1" :
+      print(theList)
+  elif menu == "2" :
+      item = input('Add item : ')
+      if theList.count(item) <1 :
+         theList.append(item)
+         print(theList)
+      elif theList.count(item) >1 :
+          print('Item already exists')
+  elif menu == "3" :
+      item = input('Which item ? : ')
+      ask = input('Are you sure you want toremove?enter yes/no')
+      if ask == "yes" : 
+        theList.remove(item)
+  elif menu == "4" :
+      theList.clear()
+  elif menu == "5" :
+     x = input('which item do you want to edit ?')
+     index = theList.index(x)
+     r = input('enter the change you want to make') 
+     theList[index]=r
+
+  
